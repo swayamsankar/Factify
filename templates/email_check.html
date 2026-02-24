@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>MailTruth AI</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="/static/email_check.css">
+  </head>
+  <body>
+    <div class="email-check-container">
+      <h2>MailTruth AI</h2>
+      <!-- Button to switch to News Check page -->
+      <a href="{{ url_for('home') }}" class="btn btn-outline-secondary mb-3">
+          <i class="bi bi-newspaper me-2"></i>Go to News Check
+      </a>
+      <form id="chk" method="post" action="/api/email_check">
+        <label for="from-email">From (email):</label>
+        <input id="from-email" name="from" type="email" required/>
+        <label for="subject-input">Subject:</label>
+        <input id="subject-input" name="subject" type="text"/>
+        <label for="body-textarea">Body:</label>
+        <textarea id="body-textarea" name="body" rows="8" cols="80"></textarea>
+        <button type="submit">Check</button>
+      </form>
+
+      <div id="verdict-display"></div>
+
+      <pre id="out"></pre>
+    </div>
+
+    <script>
+      const form = document.getElementById('chk');
+      const outDiv = document.getElementById('out');
+      const verdictDisplay = document.getElementById('verdict-display');
+
+      form.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        verdictDisplay.innerHTML = ''; // Clear previous verdict
+        outDiv.textContent = 'Checking...'; // Provide feedback
+
+        const fd = new FormData(form);
+        const payload = Object.fromEntries(fd.entries());
+        const res = await fetch('/api/email_check', {
+          method: 'POST',
+          headers: {'Content-Type': 'application/json'},
+          body: JSON.stringify(payload)
+        });
+        const json = await res.json();
+
+        // Display verdict badge using CSS classes
+        if (json.verdict) {
+          let verdictClass = '';
+          let verdictText = '';
+          // Initialize displayScore with the original score or 'N/A'
+          let displayScore = json.score !== undefined ? json.score : 'N/A'; 
+
+          switch (json.verdict) {
+            case 'real':
+              verdictClass = 'verdict-real';
+              verdictText = 'REAL';
+              displayScore = 0; // Set to 0 if real
+              break;
+            case 'likely_fake':
+              verdictClass = 'verdict-likely-fake';
+              verdictText = 'LIKELY FAKE';
+              displayScore = 1; // Set to 1 if likely_fake
+              break;
+            case 'fake':
+              verdictClass = 'verdict-fake';
+              verdictText = 'FAKE';
+              displayScore = 1; // As per instruction: if fake, display score as 1.
+              break;
+            case 'unknown':
+            default:
+              verdictClass = 'verdict-unknown';
+              verdictText = 'UNKNOWN';
+              // For unknown, keep the original score or N/A
+              break;
+          }
+          verdictDisplay.innerHTML = `
+            <div class="verdict-badge ${verdictClass}">
+              Verdict: ${verdictText} (Score: ${displayScore})
+            </div>
+          `;
+        }
+
+        // Display full JSON output in the pre tag
+        outDiv.textContent = JSON.stringify(json, null, 2);
+      });
+    </script>
+  </body>
+</html>

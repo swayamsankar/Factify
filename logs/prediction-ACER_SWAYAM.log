@@ -1,0 +1,505 @@
+2025-05-13 19:32:04,133 - fake_news_detection - ERROR - Error loading configuration: [Errno 2] No such file or directory: 'config/config.yaml'
+2025-05-13 19:32:04,133 - fake_news_detection - ERROR - Error in main function: [Errno 2] No such file or directory: 'config/config.yaml'
+2025-05-13 19:32:04,133 - fake_news_detection - ERROR - Unhandled exception: [Errno 2] No such file or directory: 'config/config.yaml'
+2025-05-13 19:36:01,196 - fake_news_detection - ERROR - Error loading configuration: [Errno 2] No such file or directory: 'config/config.yaml'
+2025-05-13 19:36:01,196 - fake_news_detection - ERROR - Error in main function: [Errno 2] No such file or directory: 'config/config.yaml'
+2025-05-13 19:36:01,196 - fake_news_detection - ERROR - Unhandled exception: [Errno 2] No such file or directory: 'config/config.yaml'
+2025-05-13 19:38:21,374 - fake_news_detection - ERROR - Error loading configuration: [Errno 2] No such file or directory: 'config/config.yaml'
+2025-05-13 19:38:21,374 - fake_news_detection - ERROR - Error in main function: [Errno 2] No such file or directory: 'config/config.yaml'
+2025-05-13 19:38:21,374 - fake_news_detection - ERROR - Unhandled exception: [Errno 2] No such file or directory: 'config/config.yaml'
+2025-05-13 19:39:46,765 - fake_news_detection - ERROR - Error loading configuration: [Errno 2] No such file or directory: 'config/config.yaml'
+2025-05-13 19:39:46,765 - fake_news_detection - ERROR - Error in main function: [Errno 2] No such file or directory: 'config/config.yaml'
+2025-05-13 19:39:46,765 - fake_news_detection - ERROR - Unhandled exception: [Errno 2] No such file or directory: 'config/config.yaml'
+2025-05-13 19:40:24,529 - fake_news_detection - INFO - Configuration loaded from config/config.yaml
+2025-05-13 19:40:24,529 - fake_news_detection - INFO - Directories created successfully
+2025-05-13 19:40:24,529 - fake_news_detection - INFO - Starting data preparation pipeline...
+2025-05-13 19:40:24,961 - fake_news_detection - INFO - NLTK resources downloaded successfully
+2025-05-13 19:40:24,961 - fake_news_detection - INFO - Loading data from files...
+2025-05-13 19:40:26,259 - fake_news_detection - INFO - Removing 209 duplicate entries
+2025-05-13 19:40:26,624 - fake_news_detection - INFO - Data loaded successfully: 44689 rows and 4 columns
+2025-05-13 19:40:26,624 - fake_news_detection - INFO - Starting exploratory data analysis...
+2025-05-13 19:40:26,624 - fake_news_detection - INFO - Calculating text features...
+2025-05-13 19:41:51,360 - fake_news_detection - INFO - Text features calculated successfully
+2025-05-13 19:41:51,360 - fake_news_detection - INFO - Plotting class distribution...
+2025-05-13 19:41:51,857 - fake_news_detection - INFO - Class distribution plot saved to c:\Users\emon1\Desktop\Focus\New folder\fake_news_detection\img\plots\class_distribution.png
+2025-05-13 19:41:52,011 - fake_news_detection - INFO - Pie chart saved to c:\Users\emon1\Desktop\Focus\New folder\fake_news_detection\img\plots\class_distribution_pie.png
+2025-05-13 19:41:52,011 - fake_news_detection - INFO - Plotting text features distribution...
+2025-05-13 19:41:53,137 - fake_news_detection - INFO - Text features plot saved to c:\Users\emon1\Desktop\Focus\New folder\fake_news_detection\img\plots\text_features.png
+2025-05-13 19:41:53,137 - fake_news_detection - INFO - Creating wordcloud for target=0...
+2025-05-13 19:41:53,150 - fake_news_detection - ERROR - Error creating wordcloud: 'clean_text'
+2025-05-13 19:41:53,150 - fake_news_detection - INFO - Creating wordcloud for target=1...
+2025-05-13 19:41:53,158 - fake_news_detection - ERROR - Error creating wordcloud: 'clean_text'
+2025-05-13 19:41:53,158 - fake_news_detection - INFO - Plotting 10 most common words for target=0...
+2025-05-13 19:41:53,158 - fake_news_detection - ERROR - Error plotting common words: 'clean_text'
+2025-05-13 19:41:53,168 - fake_news_detection - INFO - Plotting 10 most common words for target=1...
+2025-05-13 19:41:53,168 - fake_news_detection - ERROR - Error plotting common words: 'clean_text'
+2025-05-13 19:41:53,168 - fake_news_detection - INFO - Exploratory data analysis completed successfully
+2025-05-13 19:41:53,168 - fake_news_detection - INFO - Cleaning text data...
+2025-05-13 19:42:45,053 - fake_news_detection - INFO - Text data cleaned successfully
+2025-05-13 19:42:48,986 - fake_news_detection - INFO - Clean data saved to data/processed/clean_data.csv
+2025-05-13 19:42:48,986 - fake_news_detection - INFO - Starting model training pipeline...
+2025-05-13 19:42:48,987 - fake_news_detection - INFO - Preparing data for model training...
+2025-05-13 19:42:48,987 - fake_news_detection - INFO - Tokenizing texts with vocab_size=10000, max_length=100...
+2025-05-13 19:42:58,522 - fake_news_detection - INFO - Tokenization and padding completed successfully
+2025-05-13 19:42:58,563 - fake_news_detection - INFO - Data prepared: X_train shape=(35751, 100), X_test shape=(8938, 100)
+2025-05-13 19:42:58,563 - fake_news_detection - INFO - Building LSTM-GRU model with vocab_size=10000, embedding_dim=100...
+2025-05-13 19:42:58,812 - fake_news_detection - INFO - LSTM-GRU model built successfully
+2025-05-13 19:42:58,812 - fake_news_detection - INFO - Training model for 5 epochs with batch_size=64...
+2025-05-13 19:48:14,336 - fake_news_detection - INFO - Model training completed successfully
+2025-05-13 19:48:14,337 - fake_news_detection - INFO - Starting model evaluation and visualization...
+2025-05-13 19:48:14,338 - fake_news_detection - INFO - Evaluating model performance...
+2025-05-13 19:48:19,522 - fake_news_detection - INFO - Model accuracy: 0.9834
+2025-05-13 19:48:19,523 - fake_news_detection - INFO - Generating classification report...
+2025-05-13 19:48:19,533 - fake_news_detection - INFO - 
+              precision    recall  f1-score   support
+
+           0       0.98      0.99      0.98      4648
+           1       0.99      0.98      0.98      4290
+
+    accuracy                           0.98      8938
+   macro avg       0.98      0.98      0.98      8938
+weighted avg       0.98      0.98      0.98      8938
+
+2025-05-13 19:48:19,534 - fake_news_detection - INFO - Plotting confusion matrix...
+2025-05-13 19:48:19,678 - fake_news_detection - INFO - Confusion matrix saved to img/plots\confusion_matrix.png
+2025-05-13 19:48:19,683 - fake_news_detection - INFO - Plotting training history...
+2025-05-13 19:48:19,940 - fake_news_detection - INFO - Training history plot saved to img/plots\training_history.png
+2025-05-13 19:48:19,946 - fake_news_detection - INFO - Model evaluation and visualization completed successfully
+2025-05-13 19:48:19,977 - fake_news_detection - INFO - Model saved to models/saved_models/fake_news_detector.h5
+2025-05-13 19:48:20,189 - fake_news_detection - INFO - Tokenizer saved to models/saved_models/tokenizer.pickle
+2025-05-13 19:48:20,226 - fake_news_detection - INFO - Model training completed with accuracy: 0.9834
+2025-05-13 20:33:43,082 - fake_news_detection - INFO - Configuration loaded from config/config.yaml
+2025-05-13 20:33:43,082 - fake_news_detection - INFO - Directories created successfully
+2025-05-13 20:33:43,082 - fake_news_detection - INFO - Starting prediction pipeline...
+2025-05-13 20:33:43,083 - fake_news_detection - INFO - Loading model from models/saved_models/fake_news_detector.h5
+2025-05-13 20:33:43,229 - fake_news_detection - INFO - Model loaded successfully
+2025-05-13 20:33:43,230 - fake_news_detection - INFO - Loading tokenizer from models/saved_models/tokenizer.pickle
+2025-05-13 20:33:43,448 - fake_news_detection - INFO - Tokenizer loaded successfully
+2025-05-13 20:33:43,449 - fake_news_detection - INFO - Making prediction...
+2025-05-13 20:33:43,790 - fake_news_detection - INFO - Prediction: FAKE (probability: 0.0074)
+2025-05-13 20:33:43,822 - fake_news_detection - INFO - Prediction result: FAKE (probability: 0.0074)
+2025-05-13 22:13:59,694 - fake_news_detection - ERROR - Error loading configuration: [Errno 2] No such file or directory: 'config/config.yaml'
+2025-05-13 22:13:59,695 - fake_news_detection - ERROR - Error in main function: [Errno 2] No such file or directory: 'config/config.yaml'
+2025-05-13 22:13:59,695 - fake_news_detection - ERROR - Unhandled exception: [Errno 2] No such file or directory: 'config/config.yaml'
+2025-11-05 16:00:15,240 - fake_news_detection - INFO - Configuration loaded from config/config.yaml
+2025-11-05 16:00:15,254 - fake_news_detection - INFO - Directories created successfully
+2025-11-05 16:00:15,258 - fake_news_detection - INFO - Starting data preparation pipeline...
+2025-11-05 16:00:19,188 - fake_news_detection - INFO - NLTK resources downloaded successfully
+2025-11-05 16:00:19,188 - fake_news_detection - INFO - Loading data from files...
+2025-11-05 16:00:21,007 - fake_news_detection - INFO - Removing 209 duplicate entries
+2025-11-05 16:00:21,566 - fake_news_detection - INFO - Data loaded successfully: 44689 rows and 4 columns
+2025-11-05 16:00:21,566 - fake_news_detection - INFO - Starting exploratory data analysis...
+2025-11-05 16:00:21,566 - fake_news_detection - INFO - Calculating text features...
+2025-11-05 16:00:21,591 - fake_news_detection - ERROR - Error calculating text features: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - 'C:\\Users\\swayam sankar nayak/nltk_data'
+    - 'C:\\Users\\swayam sankar nayak\\AppData\\Local\\Programs\\Python\\Python311\\nltk_data'
+    - 'C:\\Users\\swayam sankar nayak\\AppData\\Local\\Programs\\Python\\Python311\\share\\nltk_data'
+    - 'C:\\Users\\swayam sankar nayak\\AppData\\Local\\Programs\\Python\\Python311\\lib\\nltk_data'
+    - 'C:\\Users\\swayam sankar nayak\\AppData\\Roaming\\nltk_data'
+    - 'C:\\nltk_data'
+    - 'D:\\nltk_data'
+    - 'E:\\nltk_data'
+**********************************************************************
+
+2025-11-05 16:00:21,600 - fake_news_detection - ERROR - Error in EDA process: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - 'C:\\Users\\swayam sankar nayak/nltk_data'
+    - 'C:\\Users\\swayam sankar nayak\\AppData\\Local\\Programs\\Python\\Python311\\nltk_data'
+    - 'C:\\Users\\swayam sankar nayak\\AppData\\Local\\Programs\\Python\\Python311\\share\\nltk_data'
+    - 'C:\\Users\\swayam sankar nayak\\AppData\\Local\\Programs\\Python\\Python311\\lib\\nltk_data'
+    - 'C:\\Users\\swayam sankar nayak\\AppData\\Roaming\\nltk_data'
+    - 'C:\\nltk_data'
+    - 'D:\\nltk_data'
+    - 'E:\\nltk_data'
+**********************************************************************
+
+2025-11-05 16:00:21,601 - fake_news_detection - ERROR - Error in data preparation pipeline: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - 'C:\\Users\\swayam sankar nayak/nltk_data'
+    - 'C:\\Users\\swayam sankar nayak\\AppData\\Local\\Programs\\Python\\Python311\\nltk_data'
+    - 'C:\\Users\\swayam sankar nayak\\AppData\\Local\\Programs\\Python\\Python311\\share\\nltk_data'
+    - 'C:\\Users\\swayam sankar nayak\\AppData\\Local\\Programs\\Python\\Python311\\lib\\nltk_data'
+    - 'C:\\Users\\swayam sankar nayak\\AppData\\Roaming\\nltk_data'
+    - 'C:\\nltk_data'
+    - 'D:\\nltk_data'
+    - 'E:\\nltk_data'
+**********************************************************************
+
+2025-11-05 16:00:21,603 - fake_news_detection - ERROR - Error in main function: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - 'C:\\Users\\swayam sankar nayak/nltk_data'
+    - 'C:\\Users\\swayam sankar nayak\\AppData\\Local\\Programs\\Python\\Python311\\nltk_data'
+    - 'C:\\Users\\swayam sankar nayak\\AppData\\Local\\Programs\\Python\\Python311\\share\\nltk_data'
+    - 'C:\\Users\\swayam sankar nayak\\AppData\\Local\\Programs\\Python\\Python311\\lib\\nltk_data'
+    - 'C:\\Users\\swayam sankar nayak\\AppData\\Roaming\\nltk_data'
+    - 'C:\\nltk_data'
+    - 'D:\\nltk_data'
+    - 'E:\\nltk_data'
+**********************************************************************
+
+2025-11-05 16:00:21,603 - fake_news_detection - ERROR - Unhandled exception: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - 'C:\\Users\\swayam sankar nayak/nltk_data'
+    - 'C:\\Users\\swayam sankar nayak\\AppData\\Local\\Programs\\Python\\Python311\\nltk_data'
+    - 'C:\\Users\\swayam sankar nayak\\AppData\\Local\\Programs\\Python\\Python311\\share\\nltk_data'
+    - 'C:\\Users\\swayam sankar nayak\\AppData\\Local\\Programs\\Python\\Python311\\lib\\nltk_data'
+    - 'C:\\Users\\swayam sankar nayak\\AppData\\Roaming\\nltk_data'
+    - 'C:\\nltk_data'
+    - 'D:\\nltk_data'
+    - 'E:\\nltk_data'
+**********************************************************************
+
+2025-11-05 16:01:32,670 - fake_news_detection - INFO - Configuration loaded from config/config.yaml
+2025-11-05 16:01:32,672 - fake_news_detection - INFO - Directories created successfully
+2025-11-05 16:01:32,673 - fake_news_detection - INFO - Starting data preparation pipeline...
+2025-11-05 16:01:33,071 - fake_news_detection - INFO - NLTK resources downloaded successfully
+2025-11-05 16:01:33,071 - fake_news_detection - INFO - Loading data from files...
+2025-11-05 16:01:34,927 - fake_news_detection - INFO - Removing 209 duplicate entries
+2025-11-05 16:01:35,390 - fake_news_detection - INFO - Data loaded successfully: 44689 rows and 4 columns
+2025-11-05 16:01:35,390 - fake_news_detection - INFO - Starting exploratory data analysis...
+2025-11-05 16:01:35,390 - fake_news_detection - INFO - Calculating text features...
+2025-11-05 16:01:35,430 - fake_news_detection - ERROR - Error calculating text features: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - 'C:\\Users\\swayam sankar nayak/nltk_data'
+    - 'C:\\Users\\swayam sankar nayak\\AppData\\Local\\Programs\\Python\\Python311\\nltk_data'
+    - 'C:\\Users\\swayam sankar nayak\\AppData\\Local\\Programs\\Python\\Python311\\share\\nltk_data'
+    - 'C:\\Users\\swayam sankar nayak\\AppData\\Local\\Programs\\Python\\Python311\\lib\\nltk_data'
+    - 'C:\\Users\\swayam sankar nayak\\AppData\\Roaming\\nltk_data'
+    - 'C:\\nltk_data'
+    - 'D:\\nltk_data'
+    - 'E:\\nltk_data'
+**********************************************************************
+
+2025-11-05 16:01:35,431 - fake_news_detection - ERROR - Error in EDA process: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - 'C:\\Users\\swayam sankar nayak/nltk_data'
+    - 'C:\\Users\\swayam sankar nayak\\AppData\\Local\\Programs\\Python\\Python311\\nltk_data'
+    - 'C:\\Users\\swayam sankar nayak\\AppData\\Local\\Programs\\Python\\Python311\\share\\nltk_data'
+    - 'C:\\Users\\swayam sankar nayak\\AppData\\Local\\Programs\\Python\\Python311\\lib\\nltk_data'
+    - 'C:\\Users\\swayam sankar nayak\\AppData\\Roaming\\nltk_data'
+    - 'C:\\nltk_data'
+    - 'D:\\nltk_data'
+    - 'E:\\nltk_data'
+**********************************************************************
+
+2025-11-05 16:01:35,431 - fake_news_detection - ERROR - Error in data preparation pipeline: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - 'C:\\Users\\swayam sankar nayak/nltk_data'
+    - 'C:\\Users\\swayam sankar nayak\\AppData\\Local\\Programs\\Python\\Python311\\nltk_data'
+    - 'C:\\Users\\swayam sankar nayak\\AppData\\Local\\Programs\\Python\\Python311\\share\\nltk_data'
+    - 'C:\\Users\\swayam sankar nayak\\AppData\\Local\\Programs\\Python\\Python311\\lib\\nltk_data'
+    - 'C:\\Users\\swayam sankar nayak\\AppData\\Roaming\\nltk_data'
+    - 'C:\\nltk_data'
+    - 'D:\\nltk_data'
+    - 'E:\\nltk_data'
+**********************************************************************
+
+2025-11-05 16:01:35,431 - fake_news_detection - ERROR - Error in main function: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - 'C:\\Users\\swayam sankar nayak/nltk_data'
+    - 'C:\\Users\\swayam sankar nayak\\AppData\\Local\\Programs\\Python\\Python311\\nltk_data'
+    - 'C:\\Users\\swayam sankar nayak\\AppData\\Local\\Programs\\Python\\Python311\\share\\nltk_data'
+    - 'C:\\Users\\swayam sankar nayak\\AppData\\Local\\Programs\\Python\\Python311\\lib\\nltk_data'
+    - 'C:\\Users\\swayam sankar nayak\\AppData\\Roaming\\nltk_data'
+    - 'C:\\nltk_data'
+    - 'D:\\nltk_data'
+    - 'E:\\nltk_data'
+**********************************************************************
+
+2025-11-05 16:01:35,431 - fake_news_detection - ERROR - Unhandled exception: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - 'C:\\Users\\swayam sankar nayak/nltk_data'
+    - 'C:\\Users\\swayam sankar nayak\\AppData\\Local\\Programs\\Python\\Python311\\nltk_data'
+    - 'C:\\Users\\swayam sankar nayak\\AppData\\Local\\Programs\\Python\\Python311\\share\\nltk_data'
+    - 'C:\\Users\\swayam sankar nayak\\AppData\\Local\\Programs\\Python\\Python311\\lib\\nltk_data'
+    - 'C:\\Users\\swayam sankar nayak\\AppData\\Roaming\\nltk_data'
+    - 'C:\\nltk_data'
+    - 'D:\\nltk_data'
+    - 'E:\\nltk_data'
+**********************************************************************
+
+2025-11-05 16:03:41,334 - fake_news_detection - INFO - Configuration loaded from config/config.yaml
+2025-11-05 16:03:41,334 - fake_news_detection - INFO - Directories created successfully
+2025-11-05 16:03:41,334 - fake_news_detection - INFO - Starting data preparation pipeline...
+2025-11-05 16:03:41,631 - fake_news_detection - INFO - NLTK resources downloaded successfully
+2025-11-05 16:03:41,632 - fake_news_detection - INFO - Loading data from files...
+2025-11-05 16:03:43,175 - fake_news_detection - INFO - Removing 209 duplicate entries
+2025-11-05 16:03:43,664 - fake_news_detection - INFO - Data loaded successfully: 44689 rows and 4 columns
+2025-11-05 16:03:43,664 - fake_news_detection - INFO - Starting exploratory data analysis...
+2025-11-05 16:03:43,664 - fake_news_detection - INFO - Calculating text features...
+2025-11-05 16:05:16,089 - fake_news_detection - INFO - Text features calculated successfully
+2025-11-05 16:05:16,089 - fake_news_detection - INFO - Plotting class distribution...
+2025-11-05 16:05:18,965 - fake_news_detection - INFO - Class distribution plot saved to C:\Users\swayam sankar nayak\OneDrive\Documents\MediaTruth\img\plots\class_distribution.png
+2025-11-05 16:05:19,370 - fake_news_detection - INFO - Pie chart saved to C:\Users\swayam sankar nayak\OneDrive\Documents\MediaTruth\img\plots\class_distribution_pie.png
+2025-11-05 16:05:19,452 - fake_news_detection - INFO - Plotting text features distribution...
+2025-11-05 16:05:21,054 - fake_news_detection - INFO - Text features plot saved to C:\Users\swayam sankar nayak\OneDrive\Documents\MediaTruth\img\plots\text_features.png
+2025-11-05 16:05:21,126 - fake_news_detection - INFO - Creating wordcloud for target=0...
+2025-11-05 16:05:21,228 - fake_news_detection - ERROR - Error creating wordcloud: 'clean_text'
+2025-11-05 16:05:21,228 - fake_news_detection - INFO - Creating wordcloud for target=1...
+2025-11-05 16:05:21,260 - fake_news_detection - ERROR - Error creating wordcloud: 'clean_text'
+2025-11-05 16:05:21,269 - fake_news_detection - INFO - Plotting 10 most common words for target=0...
+2025-11-05 16:05:21,283 - fake_news_detection - ERROR - Error plotting common words: 'clean_text'
+2025-11-05 16:05:21,286 - fake_news_detection - INFO - Plotting 10 most common words for target=1...
+2025-11-05 16:05:21,295 - fake_news_detection - ERROR - Error plotting common words: 'clean_text'
+2025-11-05 16:05:21,295 - fake_news_detection - INFO - Exploratory data analysis completed successfully
+2025-11-05 16:05:21,295 - fake_news_detection - INFO - Cleaning text data...
+2025-11-05 16:06:29,699 - fake_news_detection - INFO - Text data cleaned successfully
+2025-11-05 16:06:37,363 - fake_news_detection - INFO - Clean data saved to data/processed/clean_data.csv
+2025-11-05 16:06:37,365 - fake_news_detection - INFO - Starting model training pipeline...
+2025-11-05 16:06:37,365 - fake_news_detection - INFO - Preparing data for model training...
+2025-11-05 16:06:37,365 - fake_news_detection - INFO - Tokenizing texts with vocab_size=10000, max_length=100...
+2025-11-05 16:06:49,204 - fake_news_detection - INFO - Tokenization and padding completed successfully
+2025-11-05 16:06:49,294 - fake_news_detection - INFO - Data prepared: X_train shape=(35751, 100), X_test shape=(8938, 100)
+2025-11-05 16:06:49,300 - fake_news_detection - INFO - Building LSTM-GRU model with vocab_size=10000, embedding_dim=100...
+2025-11-05 16:06:49,614 - fake_news_detection - INFO - LSTM-GRU model built successfully
+2025-11-05 16:06:49,614 - fake_news_detection - INFO - Training model for 5 epochs with batch_size=64...
+2025-11-05 16:20:45,082 - fake_news_detection - INFO - Model training completed successfully
+2025-11-05 16:20:45,086 - fake_news_detection - INFO - Starting model evaluation and visualization...
+2025-11-05 16:20:45,088 - fake_news_detection - INFO - Evaluating model performance...
+2025-11-05 16:21:00,932 - fake_news_detection - INFO - Model accuracy: 0.9805
+2025-11-05 16:21:00,932 - fake_news_detection - INFO - Generating classification report...
+2025-11-05 16:21:00,967 - fake_news_detection - INFO - 
+              precision    recall  f1-score   support
+
+           0       0.99      0.98      0.98      4648
+           1       0.97      0.99      0.98      4290
+
+    accuracy                           0.98      8938
+   macro avg       0.98      0.98      0.98      8938
+weighted avg       0.98      0.98      0.98      8938
+
+2025-11-05 16:21:00,969 - fake_news_detection - INFO - Plotting confusion matrix...
+2025-11-05 16:21:01,509 - fake_news_detection - INFO - Confusion matrix saved to img/plots\confusion_matrix.png
+2025-11-05 16:21:01,607 - fake_news_detection - INFO - Plotting training history...
+2025-11-05 16:21:02,049 - fake_news_detection - INFO - Training history plot saved to img/plots\training_history.png
+2025-11-05 16:21:02,236 - fake_news_detection - INFO - Model evaluation and visualization completed successfully
+2025-11-05 16:21:02,324 - fake_news_detection - INFO - Model saved to models/saved_models/fake_news_detector.h5
+2025-11-05 16:21:02,788 - fake_news_detection - INFO - Tokenizer saved to models/saved_models/tokenizer.pickle
+2025-11-05 16:21:02,912 - fake_news_detection - INFO - Model training completed with accuracy: 0.9805
+2025-11-15 01:32:28,209 - fake_news_detection - INFO - Configuration loaded from config/config.yaml
+2025-11-15 01:32:28,219 - fake_news_detection - INFO - Directories created successfully
+2025-11-15 01:32:28,219 - fake_news_detection - INFO - Starting data preparation pipeline...
+2025-11-15 01:32:28,676 - fake_news_detection - INFO - NLTK resources downloaded successfully
+2025-11-15 01:32:28,676 - fake_news_detection - INFO - Loading data from files...
+2025-11-15 01:32:30,701 - fake_news_detection - INFO - Removing 209 duplicate entries
+2025-11-15 01:32:31,216 - fake_news_detection - INFO - Data loaded successfully: 44689 rows and 4 columns
+2025-11-15 01:32:31,216 - fake_news_detection - INFO - Starting exploratory data analysis...
+2025-11-15 01:32:31,216 - fake_news_detection - INFO - Calculating text features...
+2025-11-15 01:34:28,628 - fake_news_detection - INFO - Text features calculated successfully
+2025-11-15 01:34:28,675 - fake_news_detection - INFO - Plotting class distribution...
+2025-11-15 01:34:33,865 - fake_news_detection - INFO - Class distribution plot saved to C:\Users\swayam sankar nayak\OneDrive\Documents\MediaTruth\img\plots\class_distribution.png
+2025-11-15 01:34:34,376 - fake_news_detection - INFO - Pie chart saved to C:\Users\swayam sankar nayak\OneDrive\Documents\MediaTruth\img\plots\class_distribution_pie.png
+2025-11-15 01:34:34,501 - fake_news_detection - INFO - Plotting text features distribution...
+2025-11-15 01:34:47,122 - fake_news_detection - INFO - Text features plot saved to C:\Users\swayam sankar nayak\OneDrive\Documents\MediaTruth\img\plots\text_features.png
+2025-11-15 01:34:47,255 - fake_news_detection - INFO - Creating wordcloud for target=0...
+2025-11-15 01:34:47,802 - fake_news_detection - ERROR - Error creating wordcloud: 'clean_text'
+2025-11-15 01:34:47,806 - fake_news_detection - INFO - Creating wordcloud for target=1...
+2025-11-15 01:34:48,581 - fake_news_detection - ERROR - Error creating wordcloud: 'clean_text'
+2025-11-15 01:34:48,583 - fake_news_detection - INFO - Plotting 10 most common words for target=0...
+2025-11-15 01:34:48,595 - fake_news_detection - ERROR - Error plotting common words: 'clean_text'
+2025-11-15 01:34:48,598 - fake_news_detection - INFO - Plotting 10 most common words for target=1...
+2025-11-15 01:34:48,609 - fake_news_detection - ERROR - Error plotting common words: 'clean_text'
+2025-11-15 01:34:48,616 - fake_news_detection - INFO - Exploratory data analysis completed successfully
+2025-11-15 01:34:48,619 - fake_news_detection - INFO - Cleaning text data...
+2025-11-15 01:36:16,440 - fake_news_detection - INFO - Text data cleaned successfully
+2025-11-15 01:36:27,174 - fake_news_detection - INFO - Clean data saved to data/processed/clean_data.csv
+2025-11-15 01:36:27,177 - fake_news_detection - INFO - Starting model training pipeline...
+2025-11-15 01:36:27,179 - fake_news_detection - INFO - Preparing data for model training...
+2025-11-15 01:36:27,181 - fake_news_detection - INFO - Tokenizing texts with vocab_size=10000, max_length=100...
+2025-11-15 01:36:39,601 - fake_news_detection - INFO - Tokenization and padding completed successfully
+2025-11-15 01:36:39,793 - fake_news_detection - INFO - Data prepared: X_train shape=(35751, 100), X_test shape=(8938, 100)
+2025-11-15 01:36:39,798 - fake_news_detection - INFO - Building LSTM-GRU model with vocab_size=10000, embedding_dim=100...
+2025-11-15 01:36:41,052 - fake_news_detection - INFO - LSTM-GRU model built successfully
+2025-11-15 01:36:41,052 - fake_news_detection - INFO - Training model for 5 epochs with batch_size=64...
+2025-11-15 01:48:21,271 - fake_news_detection - INFO - Model training completed successfully
+2025-11-15 01:48:21,293 - fake_news_detection - INFO - Starting model evaluation and visualization...
+2025-11-15 01:48:21,312 - fake_news_detection - INFO - Evaluating model performance...
+2025-11-15 01:48:34,401 - fake_news_detection - INFO - Model accuracy: 0.9852
+2025-11-15 01:48:34,404 - fake_news_detection - INFO - Generating classification report...
+2025-11-15 01:48:34,488 - fake_news_detection - INFO - 
+              precision    recall  f1-score   support
+
+           0       0.99      0.98      0.99      4648
+           1       0.98      0.99      0.98      4290
+
+    accuracy                           0.99      8938
+   macro avg       0.99      0.99      0.99      8938
+weighted avg       0.99      0.99      0.99      8938
+
+2025-11-15 01:48:34,490 - fake_news_detection - INFO - Plotting confusion matrix...
+2025-11-15 01:48:37,138 - fake_news_detection - INFO - Confusion matrix saved to img/plots\confusion_matrix.png
+2025-11-15 01:48:37,233 - fake_news_detection - INFO - Plotting training history...
+2025-11-15 01:48:37,870 - fake_news_detection - INFO - Training history plot saved to img/plots\training_history.png
+2025-11-15 01:48:37,931 - fake_news_detection - INFO - Model evaluation and visualization completed successfully
+2025-11-15 01:48:38,314 - fake_news_detection - INFO - Model saved to models/saved_models/fake_news_detector.h5
+2025-11-15 01:48:39,409 - fake_news_detection - INFO - Tokenizer saved to models/saved_models/tokenizer.pickle
+2025-11-15 01:48:39,478 - fake_news_detection - INFO - Model training completed with accuracy: 0.9852
+2025-11-16 16:30:51,880 - fake_news_detection - INFO - Configuration loaded from config/config.yaml
+2025-11-16 16:30:51,880 - fake_news_detection - INFO - Directories created successfully
+2025-11-16 16:30:51,880 - fake_news_detection - INFO - Starting data preparation pipeline...
+2025-11-16 16:30:52,386 - fake_news_detection - INFO - NLTK resources downloaded successfully
+2025-11-16 16:30:52,387 - fake_news_detection - INFO - Loading data from files...
+2025-11-16 16:30:55,020 - fake_news_detection - INFO - Removing 209 duplicate entries
+2025-11-16 16:30:55,671 - fake_news_detection - INFO - Data loaded successfully: 44689 rows and 4 columns
+2025-11-16 16:30:55,671 - fake_news_detection - INFO - Starting exploratory data analysis...
+2025-11-16 16:30:55,671 - fake_news_detection - INFO - Calculating text features...
+2025-11-16 16:33:13,696 - fake_news_detection - INFO - Text features calculated successfully
+2025-11-16 16:33:13,696 - fake_news_detection - INFO - Plotting class distribution...
+2025-11-16 16:33:16,137 - fake_news_detection - INFO - Class distribution plot saved to C:\Users\swayam sankar nayak\OneDrive\Documents\MediaTruth\img\plots\class_distribution.png
+2025-11-16 16:33:16,602 - fake_news_detection - INFO - Pie chart saved to C:\Users\swayam sankar nayak\OneDrive\Documents\MediaTruth\img\plots\class_distribution_pie.png
+2025-11-16 16:33:16,704 - fake_news_detection - INFO - Plotting text features distribution...
+2025-11-16 16:33:19,780 - fake_news_detection - INFO - Text features plot saved to C:\Users\swayam sankar nayak\OneDrive\Documents\MediaTruth\img\plots\text_features.png
+2025-11-16 16:33:19,867 - fake_news_detection - INFO - Creating wordcloud for target=0...
+2025-11-16 16:33:19,904 - fake_news_detection - ERROR - Error creating wordcloud: 'clean_text'
+2025-11-16 16:33:19,904 - fake_news_detection - INFO - Creating wordcloud for target=1...
+2025-11-16 16:33:19,938 - fake_news_detection - ERROR - Error creating wordcloud: 'clean_text'
+2025-11-16 16:33:19,938 - fake_news_detection - INFO - Plotting 10 most common words for target=0...
+2025-11-16 16:33:19,954 - fake_news_detection - ERROR - Error plotting common words: 'clean_text'
+2025-11-16 16:33:19,957 - fake_news_detection - INFO - Plotting 10 most common words for target=1...
+2025-11-16 16:33:19,967 - fake_news_detection - ERROR - Error plotting common words: 'clean_text'
+2025-11-16 16:33:19,967 - fake_news_detection - INFO - Exploratory data analysis completed successfully
+2025-11-16 16:33:19,967 - fake_news_detection - INFO - Cleaning text data...
+2025-11-16 16:35:01,397 - fake_news_detection - INFO - Text data cleaned successfully
+2025-11-16 16:35:13,921 - fake_news_detection - INFO - Clean data saved to data/processed/clean_data.csv
+2025-11-16 16:35:13,921 - fake_news_detection - INFO - Starting model training pipeline...
+2025-11-16 16:35:13,935 - fake_news_detection - INFO - Preparing data for model training...
+2025-11-16 16:35:13,935 - fake_news_detection - INFO - Tokenizing texts with vocab_size=10000, max_length=100...
+2025-11-16 16:35:32,045 - fake_news_detection - INFO - Tokenization and padding completed successfully
+2025-11-16 16:35:32,143 - fake_news_detection - INFO - Data prepared: X_train shape=(35751, 100), X_test shape=(8938, 100)
+2025-11-16 16:35:32,148 - fake_news_detection - INFO - Building LSTM-GRU model with vocab_size=10000, embedding_dim=100...
+2025-11-16 16:35:32,620 - fake_news_detection - INFO - LSTM-GRU model built successfully
+2025-11-16 16:35:32,620 - fake_news_detection - INFO - Training model for 5 epochs with batch_size=64...
+2025-11-16 16:48:14,328 - fake_news_detection - INFO - Model training completed successfully
+2025-11-16 16:48:14,344 - fake_news_detection - INFO - Starting model evaluation and visualization...
+2025-11-16 16:48:14,344 - fake_news_detection - INFO - Evaluating model performance...
+2025-11-16 16:48:32,510 - fake_news_detection - INFO - Model accuracy: 0.9875
+2025-11-16 16:48:32,511 - fake_news_detection - INFO - Generating classification report...
+2025-11-16 16:48:32,607 - fake_news_detection - INFO - 
+              precision    recall  f1-score   support
+
+           0       0.99      0.99      0.99      4648
+           1       0.99      0.99      0.99      4290
+
+    accuracy                           0.99      8938
+   macro avg       0.99      0.99      0.99      8938
+weighted avg       0.99      0.99      0.99      8938
+
+2025-11-16 16:48:32,607 - fake_news_detection - INFO - Plotting confusion matrix...
+2025-11-16 16:48:34,813 - fake_news_detection - INFO - Confusion matrix saved to img/plots\confusion_matrix.png
+2025-11-16 16:48:34,984 - fake_news_detection - INFO - Plotting training history...
+2025-11-16 16:48:35,658 - fake_news_detection - INFO - Training history plot saved to img/plots\training_history.png
+2025-11-16 16:48:35,743 - fake_news_detection - INFO - Model evaluation and visualization completed successfully
+2025-11-16 16:48:35,889 - fake_news_detection - INFO - Model saved to models/saved_models/fake_news_detector.h5
+2025-11-16 16:48:36,674 - fake_news_detection - INFO - Tokenizer saved to models/saved_models/tokenizer.pickle
+2025-11-16 16:48:36,755 - fake_news_detection - INFO - Model training completed with accuracy: 0.9875
