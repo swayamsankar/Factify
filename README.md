@@ -1,5 +1,5 @@
 # Factify: AI News Classifier with Deep Learning
-The proliferation of fake news presents significant challenges to information integrity. This system automatically classifies news articles as "real" or "fake" with 99% accuracy.
+The proliferation of fake news presents significant challenges to information integrity. This system automatically classifies news articles as "real" or "fake" with 98.7% accuracy.
 Modern social media platforms and online news outlets enable the rapid dissemination of information, but they also facilitate the widespread propagation of intentionally false or misleading content—commonly known as fake news. This phenomenon undermines public trust, distorts democratic processes, and can lead to tangible harms such as public health scares or financial market disruptions.
 
 The core problem of this project is to automatically distinguish between fake and real news articles based solely on their textual content.
@@ -222,12 +222,5 @@ weighted avg       0.99      0.99      0.99      8976
 - Adversarial robustness
 
 ---
-
-📧 [iconicemon01@gmail.com](mailto:iconicemon01@gmail.com)
-🔗 [LinkedIn](https://www.linkedin.com/in/md-emon-hasan-695483237/)
-🔗 [GitHub](https://github.com/Md-Emon-Hasan)
-[![Python 3.9+](https://img.shields.io/badge/python-3.9%2B-blue?logo=python&logoColor=white)](https://www.python.org/)
-[![TensorFlow 2.8](https://img.shields.io/badge/tensorflow-2.8-orange?logo=tensorflow&logoColor=white)](https://www.tensorflow.org/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 
 ---
