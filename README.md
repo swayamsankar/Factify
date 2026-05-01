@@ -100,6 +100,10 @@ graph TD
     D --> E[Prediction Output]
 ```
 
+# Architecture Diagram
+<img width="1440" height="1480" alt="image" src="https://github.com/user-attachments/assets/78a407d8-0341-49a9-84dc-f5a2d621a7e6" />
+
+
 ---
 
 # 🧩 System Components
